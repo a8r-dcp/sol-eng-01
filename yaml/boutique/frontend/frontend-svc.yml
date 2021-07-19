@@ -46,6 +46,13 @@ metadata:
     ### Login before presenting. In most cases login is cached and not required each time. Username = admin, PW = admin
     a8r.io/performance: https://monitoring.se1.mturner.k736.net/grafana/d/R_NuxHVWk/ambassador-dashboard?refresh=1m&orgId=1  # Updated 07.08.21
     a8r.io/dependencies: "currencyservice.boutique, emailservice.boutique, checkoutservice.boutique, recommendationservice.boutique, paymentservice.boutique, productcatalogservice.boutique, cartservice.boutique, shippingservice.boutique, adservice.boutique, redis-cart.boutique"
+    ## ArgoRollout Annotations
+    a8r.io/rollouts.scm.branch: "master"
+    a8r.io/rollouts.scm.path: "yaml/boutique/frontend"
+    a8r.io/rollouts.image-repo.type: "dockerhub"
+    a8r.io/rollouts.image-repo.name: "ambmatt/frontend"
+    a8r.io/rollouts.deployment: "frontend"
+    a8r.io/rollouts.mappings: "frontend"
 spec:
   type: ClusterIP
   selector:
