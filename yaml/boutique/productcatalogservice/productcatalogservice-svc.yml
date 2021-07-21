@@ -23,7 +23,7 @@ metadata:
   name: productcatalogservice
   namespace: boutique-staging
   annotations:
-    a8r.io/description: "Provides the list of products from a JSON file and ability to search products and get individual products.. Language = Go"
+    a8r.io/description: "Provides the list of products from a JSON file and ability to search products and get individual products. Language = Go"
     a8r.io/owner: "Daniel Bryant"
     ### Opens slack and shows Daniel Bryant's slack profile
     a8r.io/chat: https://datawire.slack.com/team/U8SPRLSQK
